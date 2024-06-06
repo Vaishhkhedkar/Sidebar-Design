@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card page Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+        .card{
+            height: 150px;
+            width: 350px;
+            box-shadow: 0px 0px 5px 2px gray;
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        .card-content{
+            display: flex;
+
+        }
+        .img-card{
+            height: 30px;
+            width: 30px;
+            box-shadow: 0px 0px 5px 2px gray;
+            padding: 5px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .content-para{
+            display: block;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-align: justify;
+        }
+        .heading{
+            padding-left:20px;
+        }
+        .bottom-nevigation{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(6, 6, 64);
+            color: white;
+            display: none;
+        }
+        .bottom-nevigation-bar{
+        
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 10px;
+            margin-left: 60px;
+        }
+        @media screen and (min-width: 100px) and (max-width:600px){
+            .content{
+            justify-content: start;
+        }
+        .Sidebar{
+            display: none;
+        }
+        .card{
+            width: 370px;
+            height: 160px;
+            margin-left: 50px;
+        }
+        .bottom-nevigation{
+            display: block;justify-content: space-around;
+
+        }
+        }
+        @media screen and (min-width: 601px) and (max-width:768px){
+            .content{
+            justify-content: start;
+        }
+        
+        .card{
+            width: 300px;
+            height: 180px;
+            margin-left: 50px;
+        }
+        .Sidebar{
+            display: none;
+        }
+        .bottom-nevigation{
+            display: block;
+            justify-content: space-around;
+        }
+        }
+        @media screen and (min-width: 769px) and (max-width:900px){
+            .content{
+            justify-content: start;
+        }
+        .card{
+            width: 330px;
+            height: 150px;
+            margin-left: 50px;
+        }
+        }
+        @media screen and (min-width: 901px) and (max-width:1245px){
+        .content{
+            justify-content: start;
+        }
+        .card{
+            width: 420px;
+            margin-left: 50px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="overall-view">
+        <div class="Sidebar">
+            <a class="img-menu active-menu" href="./index.html">
+                <img src="./img/credit-card.png" class="imgaes">
+                <span class="img-content">Card</span>
+            </a>
+
+            <a class="img-menu" href="./pages/user.html">
+                <img src="./img/user (1).png" class="imgaes">
+                <span class="img-content">User</span>
+            </a>
+
+            <a class="img-menu" href="./pages/courses.html">
+                <img src="./img/call.png" class="imgaes">
+                <span class="img-content">call list</span>
+            </a>
+
+            <a class="img-menu" href="./pages/settings.html">
+                <img src="./img/help.png" class="imgaes">
+                <span class="img-content">help</span>
+            </a>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="card-content">
+                    <img src="	https://cdn.roadtocode.org/unique-features/affordable-md.png" class="img-card">
+                    <h3 class="heading">Affordable Pricing</h3>
+                </div>
+                <div>
+                    <p class="content-para">Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India, and we provide more practical and industry-oriented knowledge.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://cdn.roadtocode.org/unique-features/multi-language-md.png" class="img-card">
+                    <h3 class="heading">Language Support</h3>
+                </div>
+                <div>
+                    <p class="content-para">We teach in Hindi and English(Hinglish) to make sure that language is not a barrier in your learning journey. We also support doubt resolution in Hindi, English and Marathi.</p>
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://cdn.roadtocode.org/unique-features/lifetime-free-notes-md.png" class="img-card">
+                    <h3 class="heading">Lifetime Free Notes</h3>
+                </div>
+                <div>
+                    <p class="content-para">Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nevigation">
+        <a class="bottom-menu-item" href="./index.html">
+            <img src="./img/credit-card.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/courses.html">
+            <img src="./img/call.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/user.html">
+            <img src="./img/user (1).png" class="bottom-nevigation-bar" height="70px">
+        </a>
+        <a class="bottom-menu-item" href="./pages/settings.html">
+            <img src="./img/help.png" class="bottom-nevigation-bar">
+        </a>
+    </div>
+</body>
+</html>

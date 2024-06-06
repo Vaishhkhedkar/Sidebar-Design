@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call page</title>
+    <link rel="stylesheet" href="./../style.css">
+    <style>
+        
+        .bottom-nevigation{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(6, 6, 64);
+            color: white;
+            display: none;
+        }
+        .bottom-nevigation-bar{
+        
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 10px;
+            margin-left: 40px;
+        }
+@media screen and (min-width: 100px) and (max-width:600px){
+        .Sidebar{
+            display: none;
+        }
+        .bottom-nevigation{
+            display: block;
+            justify-content: space-around;
+        }
+        }
+@media screen and (min-width: 601px) and (max-width:768px){
+    .Sidebar{
+            display: none;
+        }
+        .bottom-nevigation{
+            display: block;
+            justify-content: space-around;
+            padding-left: 70px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="overall-view">
+    <div class="Sidebar">
+        <a class="img-menu" href="./../index.html">
+            <img src="./../img/sidebar-img/credit-card.png" class="imgaes">
+            <span class="img-content">Card</span>
+        </a>
+
+        <a class="img-menu" href="./../pages/user.html">
+            <img src="./../img/sidebar-img/user (1).png" class="imgaes">
+            <span class="img-content">User</span>
+        </a>
+
+        <a class="img-menu active-menu" href="./courses.html">
+            <img src="./../img/sidebar-img/call.png" class="imgaes">
+            <span class="img-content">call list</span>
+        </a>
+
+        <a class="img-menu" href="./../pages/settings.html">
+            <img src="./../img/sidebar-img/help.png" class="imgaes">
+            <span class="img-content">Help</span>
+        </a>
+    </div>
+    <div>
+        <h1>this is call page</h1>
+    </div>
+    </div>
+    <div class="bottom-nevigation">
+        <a class="bottom-menu-item" href="./index.html">
+            <img src="./../img/sidebar-img/credit-card.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/courses.html">
+            <img src="./../img/sidebar-img/call.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/user.html">
+            <img src="./../img/sidebar-img/user (1).png" class="bottom-nevigation-bar" height="70px">
+        </a>
+        <a class="bottom-menu-item" href=".//pages/settings.html">
+            <img src="./../img/sidebar-img/help.png" class="bottom-nevigation-bar">
+        </a>
+    </div>
+</body>
+</html>

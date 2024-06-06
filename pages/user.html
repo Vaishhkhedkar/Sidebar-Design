@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <link rel="stylesheet" href="./../style.css">
+    <style>
+        .card{
+    background-color: pink;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+
+}
+.profile{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    
+}
+h1{
+    padding-top: 60px;
+    text-align: center;
+}
+.bottom-nevigation{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(6, 6, 64);
+            color: white;
+            display: none;
+        }
+        .bottom-nevigation-bar{
+        
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 10px;
+            margin-left: 60px;
+        }
+
+        @media screen and (min-width: 100px) and (max-width:600px){
+        .Sidebar{
+            display: none;
+        }
+        .bottom-nevigation{
+            display: block;
+            justify-content: space-around;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="overall-view">
+    <div class="Sidebar">
+        <a class="img-menu " href="./../index.html">
+            <img src="./../img/sidebar-img/credit-card.png" class="imgaes">
+            <span class="img-content">Card</span>
+        </a>
+
+        <a class="img-menu active-menu" href="./user.html">
+            <img src="./../img/sidebar-img/user (1).png" class="imgaes">
+            <span class="img-content">User</span>
+        </a>
+
+        <a class="img-menu" href="./../pages/courses.html">
+            <img src="./../img/sidebar-img/call.png" class="imgaes">
+            <span class="img-content">call list</span>
+        </a>
+
+        <a class="img-menu" href="./../pages/settings.html">
+            <img src="./../img/sidebar-img/help.png" class="imgaes">
+            <span class="img-content">help</span>
+        </a>
+    </div>
+    <div>
+        <div class="card">
+            <img src="./../img/sidebar-img/user (1).png" class="profile">
+            <h1>Mahi</h1>
+        </div>
+        <div class="card">
+            <img src="./../img/sidebar-img/user (1).png" class="profile">
+            <h1>Pravin</h1>
+        </div>
+        <div class="card">
+            <img src="./../img/sidebar-img/user (1).png" class="profile">
+            <h1>Sakshi</h1>
+        </div>
+        <div class="card">
+            <img src="./../img/sidebar-img/user (1).png" class="profile">
+            <h1>Aryan</h1>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="bottom-nevigation">
+        <a class="bottom-menu-item" href="./index.html">
+            <img src="./../img/sidebar-img/credit-card.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/courses.html">
+            <img src="./../img/sidebar-img/call.png" class="bottom-nevigation-bar">
+        </a>
+        <a class="bottom-menu-item" href="./pages/user.html">
+            <img src="./../img/sidebar-img/user (1).png" class="bottom-nevigation-bar" height="70px">
+        </a>
+        <a class="bottom-menu-item" href=".//pages/settings.html">
+            <img src="./../img/sidebar-img/help.png" class="bottom-nevigation-bar">
+        </a>
+    </div>
+</body>
+</html>
